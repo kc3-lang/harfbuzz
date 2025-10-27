@@ -7,6 +7,8 @@ project('harfbuzz', ['c', 'cpp'],
     'cpp_std=c++11',
     'wrap_mode=nofallback', # Use --wrap-mode=default to revert, https://github.com/harfbuzz/harfbuzz/pull/2548
     'buildtype=debugoptimized',
+    'default_library=both', # Build both static and shared libraries
+    'b_staticpic=true',     # Build static libraries with -fPIC
   ],
 )
 
